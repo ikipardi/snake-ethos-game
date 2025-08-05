@@ -3,7 +3,10 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: sans-serif;
-  background: #111;
+  background-image: url('images/meme1.png'), url('images/meme2.png'), url('images/meme3.png');
+  background-position: center center;
+  background-repeat: repeat;
+  margin-top: 12px;
   color: #eee;
 }
 
@@ -20,3 +23,4 @@ h1 {
 p {
   font-size: 1.2rem;
 }
+
