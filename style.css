@@ -1,13 +1,15 @@
+/* Reset & full-height for flex centering */
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertikal centering */
-  align-items: center;     /* Horisontal centering */
+  justify-content: center;
+  align-items: center;
   background-image:
     url('images/meme1.png'),
     url('images/meme2.png'),
@@ -16,27 +18,55 @@ body {
   background-position: center center;
   background-size: 200px 200px, 180px 180px, 160px 160px;
   font-family: sans-serif;
-  color: #eee;
+  color: #fff;
+  text-align: center;
 }
 
+/* Judul */
 h1 {
   color: #0f9;
   margin-bottom: 8px;
 }
 
-#score {
-  margin: 4px 0;
+/* Score box styling */
+.score-box {
+  position: relative;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow:
+    2px 2px 0 #000,
+   -2px -2px 0 #000,
+    2px -2px 0 #000,
+   -2px 2px 0 #000;
+  margin-bottom: 8px;
 }
 
+/* Canvas (game area) */
 canvas {
   border: 2px solid #0f9;
-  background: transparent;
+  background: transparent; /* memperlihatkan meme di belakang */
 }
 
+/* Credit section styling */
 .credit {
-  margin-top: 12px;
+  position: relative;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 8px;
   font-size: 0.9rem;
-  color: #bbb;
+  color: #ddd;
+  text-shadow:
+    2px 2px 0 #000,
+   -2px -2px 0 #000,
+    2px -2px 0 #000,
+   -2px 2px 0 #000;
+  margin-top: 12px;
 }
 
 .credit a {
