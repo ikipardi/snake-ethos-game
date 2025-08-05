@@ -13,7 +13,7 @@ body {
   background-image:
     url('images/meme3.jpg'),
     url('images/meme2.jpg'),
-    url('images/meme1.png');
+    url('images/meme1.jpg');
   background-repeat: repeat, repeat, repeat;
   background-position: center center;
   background-size: 200px 200px, 180px 180px, 160px 160px;
@@ -77,5 +77,6 @@ canvas {
 .credit a:hover {
   text-decoration: underline;
 }
+
 
 
