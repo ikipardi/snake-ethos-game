@@ -1,23 +1,49 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikal centering */
+  align-items: center;     /* Horisontal centering */
   background-image:
     url('images/meme1.png'),
     url('images/meme2.png'),
     url('images/meme3.png');
   background-repeat: repeat, repeat, repeat;
-  background-position: center center, center center, center center;
-  background-size: 200px 200px, 160px 160px, 120px 120px;
+  background-position: center center;
+  background-size: 200px 200px, 180px 180px, 160px 160px;
+  font-family: sans-serif;
+  color: #eee;
 }
 
-h1, p, .credit {
-  color: #fff;
-  font-family: sans-serif;
-  text-align: center;
+h1 {
+  color: #0f9;
+  margin-bottom: 8px;
+}
+
+#score {
+  margin: 4px 0;
 }
 
 canvas {
   border: 2px solid #0f9;
+  background: transparent;
+}
+
+.credit {
   margin-top: 12px;
-  background: transparent; /* canvas tetap transparan agar background body terlihat */
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.credit a {
+  color: #0f9;
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
 }
